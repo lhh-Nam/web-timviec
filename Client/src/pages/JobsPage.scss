@@ -1,0 +1,15 @@
+.jobspage {
+  width: 90%;
+
+  margin: auto;
+
+  .white-space {
+    height: 100px;
+  }
+
+  &--content {
+    border-radius: 50px;
+
+    box-shadow: 6px 9px 10px -1px rgba(0, 0, 0, 0.75);
+  }
+}

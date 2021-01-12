@@ -1,0 +1,31 @@
+@import "fonts.scss";
+
+a {
+  text-decoration: none;
+}
+html,
+body {
+  font-family: "Roboto Mono", monospace !important;
+
+  background: #fff !important;
+  color: #0f0f0f !important;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h2 {
+  text-align: center;
+  font-weight: lighter;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: #000;
+}

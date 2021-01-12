@@ -1,0 +1,183 @@
+.employer-register {
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .img {
+    display: block;
+    width: 50%;
+    height: 100vh;
+    background-image: url(../../../assets//images//employer-register.jpg);
+    background-size: auto;
+    background-repeat: no-repeat;
+
+    background-position: center;
+
+    border-radius: 50%;
+
+    @media screen and (max-width: 968px) {
+      display: none;
+    }
+  }
+
+  .master {
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .container {
+      width: 80%;
+      height: 80%;
+      margin: auto;
+
+      display: flex;
+      justify-content: center;
+
+      color: #555;
+
+      .title {
+        text-align: center;
+
+        color: #ddddf9;
+        white-space: nowrap;
+
+        font-size: 3em;
+
+        letter-spacing: 0.1em;
+        transition: 0.3s;
+        text-shadow: 1px 1px 0 #9999bf, 1px 2px 0 #9999bf, 1px 3px 0 #9999bf,
+          1px 4px 0 #9999bf, 1px 5px 0 #9999bf, 1px 6px 0 #9999bf,
+          1px 7px 0 #9999bf, 1px 8px 0 #9999bf, 5px 13px 15px black;
+      }
+
+      .main {
+        width: 100%;
+        margin-top: 30px;
+
+        .img-div {
+          display: flex;
+          justify-content: center;
+
+          .img-employer {
+            width: 120px;
+            height: 120px;
+
+            position: relative;
+
+            img {
+              width: 100%;
+              height: 100%;
+
+              border-radius: 50%;
+            }
+
+            &:hover {
+              .btnImg {
+                display: block;
+              }
+
+              .layer {
+                display: block;
+              }
+            }
+          }
+
+          .inputFile {
+            display: none;
+          }
+
+          .layer {
+            background-color: gray;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+
+            position: absolute;
+            top: 0;
+
+            opacity: 0.3;
+
+            display: none;
+          }
+
+          .btnImg {
+            position: absolute;
+
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            display: none;
+
+            .btnIcon {
+              font-size: 40px;
+
+              cursor: pointer;
+            }
+          }
+        }
+
+        .line {
+          display: flex;
+          flex-direction: row;
+
+          .input-box {
+            width: 100%;
+            margin: 15px auto;
+          }
+
+          .text_lable {
+            font-weight: bold;
+          }
+
+          .label {
+            width: 85%;
+            margin: auto;
+          }
+
+          .input {
+            width: 85%;
+            margin: auto;
+          }
+
+          input {
+            width: 100%;
+            height: 40px;
+
+            margin-top: 7px;
+            padding-left: 10px;
+
+            border: 1px solid lightgray;
+            border-radius: 5px;
+
+            /* box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.75); */
+          }
+
+          input:focus {
+            outline: none;
+          }
+        }
+
+        .btn {
+          background-color: #ddddf9;
+          color: #fefefe;
+          font-size: 20px;
+          font-weight: bold;
+
+          width: 93%;
+          margin: 30px auto 0px;
+          padding: 7px 0;
+
+          border: 1px solid lightgray;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+}

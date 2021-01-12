@@ -1,0 +1,20 @@
+version: '3'
+services: 
+  comment-service:
+    image: comment-service
+    #Local of docker file service:
+    build: ./Comment_Service
+    volumes:
+      - ./Comment_Service:/usr/src/app
+    ports: 
+      - 1111:1111
+  socket-service:
+    image: socket-service
+    build: ./Socket_Service
+    volumes:
+      - ./Socket_Service:/usr/src/app
+    ports:
+      - 2222:2222
+    depends_on:
+      - comment-service
+

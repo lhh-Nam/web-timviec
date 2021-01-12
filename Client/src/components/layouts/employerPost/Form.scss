@@ -1,0 +1,73 @@
+.form-post {
+  width: 70%;
+
+  .create-form {
+    .line-post {
+      margin: 20px 0;
+
+      &.flex-title {
+        width: 95%;
+        display: flex;
+
+        .flex-title__item {
+          width: 50%;
+        }
+      }
+
+      &.flex-box {
+        width: 95%;
+
+        display: flex;
+        justify-content: space-between;
+      }
+
+      &.textarea {
+        display: flex;
+        flex-direction: column;
+
+        strong {
+          margin-bottom: 10px;
+        }
+      }
+
+      .choice {
+        margin-right: 20px;
+
+        &:last-child {
+          margin-right: 0px;
+        }
+
+        select {
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+
+  textarea {
+    resize: none;
+
+    width: 95%;
+
+    border: 1px solid lightgray;
+    border-radius: 5px;
+
+    padding: 10px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  input {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+
+    padding: 7px 10px;
+    margin-left: 5px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}

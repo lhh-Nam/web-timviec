@@ -1,0 +1,137 @@
+.employer {
+  margin: 150px 0;
+
+  h2 {
+    width: 40%;
+    margin: auto;
+
+    border-bottom: 1px solid #000;
+
+    line-height: 0;
+
+    span {
+      background: #fff;
+      padding: 0 20px;
+    }
+  }
+
+  &__container {
+    display: flex;
+
+    .card {
+      width: 300px;
+      height: 500px;
+      perspective: 1000px;
+      margin: 100px auto 0;
+
+      &__inner {
+        width: 100%;
+        height: 100%;
+        transition: all 1s;
+        transform-style: preserve-3d;
+        position: relative;
+
+        &.is-flipped {
+          transform: rotateY(180deg);
+        }
+      }
+
+      &__face {
+        width: 100%;
+        height: 100%;
+
+        position: absolute;
+
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        overflow: hidden;
+
+        border-radius: 16px;
+        box-shadow: 0px 3px 18px 3px rgba($color: #000000, $alpha: 0.2);
+
+        &.front {
+          background-image: linear-gradient(to bottom right, #ceb463, #fff);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          h3 {
+            color: #fff;
+            font-size: 32px;
+          }
+        }
+
+        &.back {
+          background-color: (#f3f3f3);
+          transform: rotateY(180deg);
+        }
+
+        &--content {
+          width: 100%;
+          height: 100%;
+
+          .header {
+            position: relative;
+            padding: 30px;
+
+            &::after {
+              content: "";
+              display: block;
+              position: absolute;
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0;
+
+              background-image: linear-gradient(
+                to bottom left,
+                #ceb463 10%,
+                #fff 115%
+              );
+
+              z-index: -1;
+              border-radius: 0px 0px 30% 0px;
+            }
+
+            img {
+              display: block;
+              width: 128px;
+              height: 128px;
+
+              margin: 0 auto 30px;
+              border-radius: 50%;
+              background-color: #fff;
+              border: 7px solid #fff;
+              object-fit: cover;
+            }
+
+            h3 {
+              color: #fff;
+              font-size: 28px;
+              font-weight: 900;
+              text-transform: uppercase;
+              text-align: center;
+            }
+          }
+        }
+
+        &--body {
+          padding: 20px;
+
+          h4 {
+            color: #212121;
+            font-size: 22px;
+            font-weight: 600;
+            margin: 15px;
+          }
+
+          p {
+            color: #212121;
+            font-size: 16px;
+            line-height: 1.4;
+          }
+        }
+      }
+    }
+  }
+}

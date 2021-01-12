@@ -1,0 +1,46 @@
+@import "../../../assets/scss/variable.scss";
+
+.arrow {
+  position: absolute;
+  bottom: 10%;
+
+  span {
+    display: block;
+
+    $length: 20px;
+    width: $length;
+    height: $length;
+
+    border-right: 5px solid $primary;
+    border-bottom: 5px solid $primary;
+
+    margin: -10px;
+
+    transform: rotate(45deg);
+    animation: anim-arrow 2s infinite;
+
+    &:nth-child(2) {
+      animation-delay: -0.2s;
+    }
+
+    &:nth-child(3) {
+      animation-delay: -0.4s;
+    }
+
+    @keyframes anim-arrow {
+      0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+      }
+
+      50% {
+        opacity: 1;
+      }
+
+      100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+      }
+    }
+  }
+}

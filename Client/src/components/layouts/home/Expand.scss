@@ -1,0 +1,64 @@
+.expand {
+  position: absolute;
+
+  width: 87%;
+  background: #fff;
+
+  display: flex;
+
+  border: 1px solid lightgray;
+
+  margin-top: 1px;
+
+  z-index: 1;
+
+  &__heading {
+    text-transform: uppercase;
+  }
+
+  .recent-search {
+    width: 33.33333%;
+    border-right: 1px solid lightgray;
+
+    &--box {
+      padding: 10px;
+    }
+
+    &__items {
+      margin-top: 10px;
+      .job {
+        padding: 5px 0;
+
+        &--number {
+          color: #8e8e8e;
+        }
+      }
+    }
+  }
+
+  .hot-keyword {
+    width: 66.66667%;
+
+    &__box {
+      padding: 10px;
+    }
+
+    .wrapper {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__items {
+      width: fit-content;
+      border: 1px solid lightgray;
+      border-radius: 50px;
+      padding: 5px 10px;
+
+      margin: 5px;
+
+      .tag-industry {
+        color: #8e8e8e;
+      }
+    }
+  }
+}

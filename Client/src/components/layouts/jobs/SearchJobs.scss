@@ -1,0 +1,73 @@
+.searchjobs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+
+  background-image: url("../../../assets/images/search.jpg");
+
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 100% 50%;
+  //background-position: center;
+  background-color: #e9f3fc;
+  border-radius: 50px 50px 0 50px;
+
+  &__box {
+    width: 600px;
+    form {
+      height: 80px;
+
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      border-radius: 15px;
+      background: #fff;
+      box-shadow: 5px 5px 10px #627485, -5px -5px 10px #ffffff;
+    }
+
+    &--input {
+      display: flex;
+      align-items: center;
+
+      input {
+        outline: none;
+        border: none;
+
+        margin: 10px;
+      }
+    }
+
+    .border {
+      height: 100%;
+      border-left: 1px solid lightgray;
+    }
+
+    &--select {
+      display: flex;
+
+      select {
+        border: none;
+        width: 120px;
+      }
+    }
+
+    &--btn {
+      button {
+        font-size: 20px;
+        padding: 10px 25px;
+
+        outline: none;
+        border: none;
+        border-radius: 5px;
+
+        color: #fff;
+        background: #506eec;
+      }
+    }
+  }
+}
+
+//https://image.freepik.com/free-vector/illustration-new-worker-choice-concept_23-2148639368.jpg
